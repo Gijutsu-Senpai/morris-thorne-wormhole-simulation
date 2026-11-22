@@ -109,8 +109,8 @@ The current source expects these files in its working directory:
 
 | Configuration variable | Expected filename | Purpose |
 |---|---|---|
-| `EXR_UNIVERSE_A` | `starmap_2020_16k.exr` | Environment sampled for the positive-`l` side |
-| `EXR_UNIVERSE_B` | `hdrmaps_com_free_10K.exr` | Environment sampled for the negative-`l` side |
+| `EXR_UNIVERSE_A` | `Ending_Universe.exr` | Environment sampled for the positive-`l` side |
+| `EXR_UNIVERSE_B` | `Starting_Universe.exr` | Environment sampled for the negative-`l` side |
 
 The project does not include these assets by default. Obtain them from their original sources and follow the applicable licence and attribution terms. Do not redistribute them in this repository unless their licences explicitly permit redistribution.
 
