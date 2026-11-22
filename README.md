@@ -32,8 +32,6 @@ Python controls the animation timeline, camera, assets, and output. The fragment
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
-└── assets/
-    └── README.md           # Instructions for obtaining external EXR maps
 ```
 
 The EXR files are not included by default. See [Environment-map assets](#environment-map-assets).
