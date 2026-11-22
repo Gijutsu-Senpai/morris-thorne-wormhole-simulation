@@ -178,8 +178,8 @@ The main configuration values are defined near the top of `wormhole_simulation.p
 | `GROW_DURATION` | `1.5` | Duration of the growth phase, in seconds |
 | `TRAVEL_DURATION` | `27.0` | Duration of the travel phase, in seconds |
 | `COLLAPSE_DURATION` | `1.5` | Duration of the collapse phase, in seconds |
-| `EXR_UNIVERSE_A` | `starmap_2020_16k.exr` | Environment map for the positive-`l` side |
-| `EXR_UNIVERSE_B` | `hdrmaps_com_free_10K.exr` | Environment map for the negative-`l` side |
+| `EXR_UNIVERSE_A` | `Ending_Universe.exr` | Environment map for the positive-`l` side |
+| `EXR_UNIVERSE_B` | `Starting_Universe.exr` | Environment map for the negative-`l` side |
 | `OUTPUT_FILE` | `wormhole_test1.mp4` | Output video filename |
 | `BASE_SPEED` | `1.2` | Base factor in the camera's distance-dependent speed expression |
 | `CAMERA_OFFSET` | `1.25` | Camera's transverse offset from the wormhole axis |
