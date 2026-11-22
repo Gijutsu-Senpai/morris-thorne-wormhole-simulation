@@ -42,25 +42,25 @@ The EXR files are not included by default. See [Environment-map assets](#environ
 
 The project is inspired by the Morris–Thorne traversable wormhole framework. In the standard zero-redshift, ultrastatic form, a commonly used spatial line element is:
 
-\[
+$$
 ds^2=-dt^2+dl^2+(l^2+b_0^2)
 \left(d\theta^2+\sin^2\theta\,d\phi^2\right)
-\]
+$$
 
 where:
 
-- \(l\) is a radial proper-distance coordinate.
-- \(b_0\) is the throat-radius parameter.
-- \(\theta\) is the polar angle.
-- \(\phi\) is the azimuthal angle.
+- $l$ is a radial proper-distance coordinate.
+- $b_0$ is the throat-radius parameter.
+- $\theta$ is the polar angle.
+- $\phi$ is the azimuthal angle.
 
 The supplied shader uses an animated effective-radius expression of the form:
 
-\[
+$$
 R_{\mathrm{eff}}^2=l^2+1.8b_0^2w
-\]
+$$
 
-where \(w\) is the animation control passed to the shader as `u_warp`.
+where $w$ is the animation control passed to the shader as `u_warp`.
 
 **Important distinction:** The `u_warp` animation modifies the effective geometry between rendered frames to create the growth and collapse effect. The shader does not solve a fully time-dependent spacetime geodesic problem while each ray is travelling. The animated geometry is a custom visualization device, not a standard dynamic Morris–Thorne solution.
 
@@ -84,7 +84,7 @@ The source imports:
 - `Imath`
 - `tqdm`
 
-It also uses Python standard-library modules `math`.
+It also uses the Python standard-library module `math`.
 
 Install the packages with:
 
@@ -110,8 +110,8 @@ The current source expects these files in its working directory:
 
 | Configuration variable | Expected filename | Purpose |
 |---|---|---|
-| `EXR_UNIVERSE_A` | `starmap_2020_16k.exr` | Environment sampled for the positive-\(l\) side |
-| `EXR_UNIVERSE_B` | `hdrmaps_com_free_10K.exr` | Environment sampled for the negative-\(l\) side |
+| `EXR_UNIVERSE_A` | `starmap_2020_16k.exr` | Environment sampled for the positive-$l$ side |
+| `EXR_UNIVERSE_B` | `hdrmaps_com_free_10K.exr` | Environment sampled for the negative-$l$ side |
 
 The project does not include these assets by default. Obtain them from their original sources and follow the applicable licence and attribution terms. Do not redistribute them in this repository unless their licences explicitly permit redistribution.
 
@@ -179,8 +179,8 @@ The main configuration values are defined near the top of `wormhole_simulation.p
 | `GROW_DURATION` | `1.5` | Duration of the growth phase, in seconds |
 | `TRAVEL_DURATION` | `27.0` | Duration of the travel phase, in seconds |
 | `COLLAPSE_DURATION` | `1.5` | Duration of the collapse phase, in seconds |
-| `EXR_UNIVERSE_A` | `starmap_2020_16k.exr` | Environment map for the positive-\(l\) side |
-| `EXR_UNIVERSE_B` | `hdrmaps_com_free_10K.exr` | Environment map for the negative-\(l\) side |
+| `EXR_UNIVERSE_A` | `starmap_2020_16k.exr` | Environment map for the positive-$l$ side |
+| `EXR_UNIVERSE_B` | `hdrmaps_com_free_10K.exr` | Environment map for the negative-$l$ side |
 | `OUTPUT_FILE` | `wormhole_test1.mp4` | Output video filename |
 | `BASE_SPEED` | `1.2` | Base factor in the camera's distance-dependent speed expression |
 | `CAMERA_OFFSET` | `1.25` | Camera's transverse offset from the wormhole axis |
